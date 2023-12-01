@@ -23,11 +23,15 @@ const App = () => {
                setPhotos(data.results)
            }}
            >
+
              <Form>
                  <Field name="search" />
              </Form>
          </Formik>
        </header>
+          <div>
+              <h2>Search And Found Your Image</h2>
+          </div>
           <div className={"container"}>
               <div className={"center"}>
                   {photos.map(photo =>
