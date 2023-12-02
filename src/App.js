@@ -3,6 +3,7 @@ import {Formik, Form, Field} from "formik";
 import "./header.css"
 import "./content.css"
 import "./article.css"
+import Logo from "./Components/Logo";
 
 const App = () => {
     const [photos, setPhotos] = useState([])
@@ -25,6 +26,7 @@ const App = () => {
            >
 
              <Form>
+                 <Logo/>
                  <Field name="search" />
              </Form>
          </Formik>
